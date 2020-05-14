@@ -21,7 +21,8 @@ async def RandomGame(ctx, *, games):
 
 @client.command(aliases = ['wheresmatt', 'Wheresmatt', 'WhereIsMatt', 'whereismatt'], brief = 'Tells user where Matt Crump is')
 async def WheresMatt(ctx):
-    await ctx.send('Matt Crump is on his couch')
+    user = discord.utils.get(message.server.members, name = 'GoatMilk', discriminator = 8908)
+    await ctx.send(f'{user.mention} is on his couch')
 
 @client.command(aliases = ['ping'], brief = 'Tells user their ping')
 async def Ping(ctx):
