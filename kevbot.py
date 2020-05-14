@@ -7,7 +7,7 @@ client = commands.Bot(command_prefix = '!')
 
 @client.event
 async def on_ready():
-    await client.change_presence(status = discord.Status.online, activity = discord.Game('captcha simulator'))
+    await client.change_presence(status = discord.Status.online, activity = discord.Game('captcha simulator - Test'))
     print('Bot is online')
 
 @client.command(aliases = ['game', 'RanGame','randomgame','rangame'], brief='Type in games seperated by commas')
