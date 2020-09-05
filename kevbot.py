@@ -47,6 +47,15 @@ async def RandomUser(ctx):
     userStr = userList[0]
     await ctx.send(userStr)
 
+@client.command(aliases = ['dadjoke', 'Dadjoke', 'DadJokes', 'dadjokes'], brief = 'Tells a dad joke')
+async def DadJoke(ctx):
+    jokeList = ["That's not a camel, that's my wife!","What's brown and sticky? A stick.","I like telling dad jokes. Sometimes he laughs!",
+                "I ordered a chicken and an egg online, I'll let you know.","I have a genetic disposition for diarrhea, it runs in my jeans!",
+                "It takes guts to be an organ donor.", "I tried to catch fog the other day, mist.","Zucchini, more like dumbkini."]
+    random.shuffle(jokeList)
+    jokeStr = jokeList[0]
+    await ctx.send(jokeStr)
+
 @client.command(aliases = ['extrainfo'], brief = '**ALL COMMANDS CAN BE DONE IN LOWERCASE**')
 async def ExtraInfo(ctx):
     await ctx.send('**All commands can be done in lowercase**')
