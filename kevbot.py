@@ -21,8 +21,8 @@ async def RandomGame(ctx, *, games):
 
 @client.command(aliases = ['wheresmatt', 'Wheresmatt', 'WhereIsMatt', 'whereismatt'], brief = 'Tells user where Matt Crump is')
 async def WheresMatt(ctx):
-    member = discord.utils.get(ctx.message.guild.members, name='MeatReveal')
-    await ctx.send(member.mention + ' is on his couch')
+    member = discord.utils.get(ctx.message.guild.members, name='Crumpy61')
+    await ctx.send(member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n' + member.mention + '\n')
 
 @client.command(aliases = ['ping'], brief = 'Tells user their ping')
 async def Ping(ctx):
@@ -60,4 +60,4 @@ async def DadJoke(ctx):
 async def ExtraInfo(ctx):
     await ctx.send('**All commands can be done in lowercase**')
 
-client.run('NzA5ODIyMDAxNDYzOTUxNDUx.XrrfZw.Ph3OuyuVhed0gI9vc5bpk_Qq-Lk')
+client.run(os.getenv('discordtoken'))
