@@ -23,9 +23,7 @@ async def RandomGame(ctx, *, games):
 async def WheresMatt(ctx):
     #member = discord.utils.get(ctx.message.guild.members, name='GoatMilk')
     #member = discord.utils.get(client.users, name="GoatMilk", discriminator="8908")
-    myid = '<@304791011635494913>'
-    await client.send_message(message.channel, ' : %s is the best ' % myid)
-    #await ctx.send(member.mention + ' is on the couch')
+    await ctx.send('@GoatMilk is on the couch')
 
 @client.command(aliases = ['ping'], brief = 'Tells user their ping')
 async def Ping(ctx):
@@ -62,7 +60,5 @@ async def DadJoke(ctx):
 @client.command(aliases = ['extrainfo'], brief = '**ALL COMMANDS CAN BE DONE IN LOWERCASE**')
 async def ExtraInfo(ctx):
     await ctx.send('**All commands can be done in lowercase**')
-    myid = '<@304791011635494913>'
-    await client.send_message(message.channel, ' : %s is the best ' % myid)
 
 client.run(os.getenv('discordtoken'))
