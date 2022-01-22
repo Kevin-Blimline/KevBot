@@ -62,5 +62,7 @@ async def DadJoke(ctx):
 @client.command(aliases = ['extrainfo'], brief = '**ALL COMMANDS CAN BE DONE IN LOWERCASE**')
 async def ExtraInfo(ctx):
     await ctx.send('**All commands can be done in lowercase**')
+    myid = '<@304791011635494913>'
+    await client.send_message(message.channel, ' : %s is the best ' % myid)
 
 client.run(os.getenv('discordtoken'))
