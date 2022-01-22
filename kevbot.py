@@ -23,8 +23,8 @@ async def RandomGame(ctx, *, games):
 async def WheresMatt(ctx):
     #member = discord.utils.get(ctx.message.guild.members, name='GoatMilk')
     #member = discord.utils.get(client.users, name="GoatMilk", discriminator="8908")
-    member = "304791011635494913"
-    await message.channel.send(f"<@{member}> is on the couch")
+    user_id = "304791011635494913"
+    await message.channel.send(f"<@{user_id}> is the best")
     #await ctx.send(member.mention + ' is on the couch')
 
 @client.command(aliases = ['ping'], brief = 'Tells user their ping')
