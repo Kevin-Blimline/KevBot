@@ -23,7 +23,7 @@ async def RandomGame(ctx, *, games):
 async def WheresMatt(ctx):
     #member = discord.utils.get(ctx.message.guild.members, name='GoatMilk')
     myid = '<@201909896357216256>'
-    await ctx.send('Matt is on the couch \n\nps: im mad')
+    await ctx.send('Matt is on the couch')
 
 @client.command(aliases = ['ping'], brief = 'Tells user their ping')
 async def Ping(ctx):
