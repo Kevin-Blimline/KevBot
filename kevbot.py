@@ -10,14 +10,14 @@ async def on_ready():
     await client.change_presence(status = discord.Status.online, activity = discord.Game('captcha simulator'))
     print('Bot is online')
 
-@client.command(aliases = ['game', 'RanGame','randomgame','rangame'], brief='Type in games seperated by commas')
-async def RandomGame(ctx, *, games):
-    gamesList = []
-    selectedGame = None
-    gamesList = (games.split(', '))
-    random.shuffle(gamesList)
-    selectedGame = gamesList[0]
-    await ctx.send(f'The random game is: {selectedGame}')
+# @client.command(aliases = ['game', 'RanGame','randomgame','rangame'], brief='Type in games seperated by commas')
+# async def RandomGame(ctx, *, games):
+#     gamesList = []
+#     selectedGame = None
+#     gamesList = (games.split(', '))
+#     random.shuffle(gamesList)
+#     selectedGame = gamesList[0]
+#     await ctx.send(f'The random game is: {selectedGame}')
 
 @client.command(aliases = ['wheresmatt', 'Wheresmatt', 'WhereIsMatt', 'whereismatt'], brief = 'Tells user where Matt Crump is')
 async def WheresMatt(ctx):
