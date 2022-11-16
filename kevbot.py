@@ -18,6 +18,7 @@ async def on_ready():
 #     random.shuffle(gamesList)
 #     selectedGame = gamesList[0]
 #     await ctx.send(f'The random game is: {selectedGame}')
+#
 
 @client.command(aliases = ['wheresmatt', 'Wheresmatt', 'WhereIsMatt', 'whereismatt'], brief = 'Tells user where Matt Crump is')
 async def WheresMatt(ctx):
