@@ -24,6 +24,13 @@ async def WheresMatt(ctx):
     #member = discord.utils.get(ctx.message.guild.members, name='GoatMilk')
     myid = '<@201909896357216256>'
     await ctx.send('Matt is on the couch')
+    
+@client.command(aliases = ['shootmason', 'Shootmason', 'shootMason'], brief = 'Shoots Mason')
+async def ShootMason(ctx):
+    #member = discord.utils.get(ctx.message.guild.members, name='GoatMilk')
+    myid = '<@304791011635494913>'
+    await ctx.send('*BANG*')
+    await ctx.send("<@" + myid + ">")
 
 @client.command(aliases = ['ping'], brief = 'Tells user their ping')
 async def Ping(ctx):
